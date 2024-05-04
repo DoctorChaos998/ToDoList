@@ -1,0 +1,17 @@
+.toDoListWrapper{
+  display: flex;
+  width: 100%;
+  //align-items: center;
+  justify-content: center;
+  //height: 100vh;
+}
+
+.toDoListContainer{
+  display: flex;
+  border-radius: 10px;
+  border: 2px dodgerblue solid;
+  width: 1000px;
+  overflow: hidden;
+  flex-direction: column;
+  box-shadow: 0 0 20px 1px dodgerblue;
+}

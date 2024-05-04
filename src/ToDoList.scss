@@ -1,0 +1,31 @@
+.toDoListContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.toDoContainer{
+  display: flex;
+  padding: 10px 0;
+  //background-color: #1b1f2b;
+}
+
+.toDoCompleteButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+}
+
+.toDo{
+  flex: 1;
+  padding: 0 10px;
+}
+
+.toDoDeleteButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+}

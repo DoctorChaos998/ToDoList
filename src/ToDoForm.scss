@@ -1,0 +1,50 @@
+.toDoFormContainer{
+  display: flex;
+  height: 60px;
+  border-bottom: 1px solid dodgerblue;
+  width: 100%;
+}
+
+.completeAllToDoButton{
+  height: 100%;
+  width: 100px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+}
+
+.addToDoButton{
+  height: 100%;
+  width: 100px;
+  cursor: pointer;
+  background-color: dodgerblue;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addToDoContainer{
+  flex: 1;
+  display: flex;
+}
+
+.addToDoLabel{
+  flex: 1;
+}
+
+.addToDoInput{
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  font-size: 25px;
+  padding: 0 15px;
+  &::placeholder{
+    color: rgba(black, 0.5);
+  }
+}
