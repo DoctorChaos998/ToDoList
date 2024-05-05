@@ -1,10 +1,28 @@
 .toDoListHeader{
   margin: 50px 0;
   width: 100%;
-  color: dodgerblue;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 200;
   font-size: 50px;
+  user-select: none;
+  background-image: linear-gradient(-45deg, #FFD700, #23d5ab, #FFA500, #FF1493);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  animation: gradientHeader 15s ease infinite;
+  transition: text-shadow linear;
+}
+
+@keyframes gradientHeader {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>ToDoList</title>
 </head>
 <body>
 <header class="toDoListHeader">
@@ -14,14 +14,14 @@
     <section class="toDoListWrapper">
         <div class="toDoListContainer">
             <div class="toDoFormContainer">
-                <button class="completeAllToDoButton">
+                <button class="toggleAllToDoButton" id="toggleAllToDo">
                     <span class="material-symbols-outlined">
-                        done_all
+                        expand_more
                     </span>
                 </button>
                 <form id="form" class="addToDoContainer">
                     <label class="addToDoLabel">
-                        <input id="input" class="addToDoInput">
+                        <input id="input" placeholder="What needs to be done?" class="addToDoInput">
                     </label>
                     <button type="submit" class="addToDoButton">
                         <span class="material-symbols-outlined">
@@ -31,6 +31,30 @@
                 </form>
             </div>
             <ul id="toDoList"></ul>
+            <div class="toDoHelperContainer" id="helper">
+                <div class="helperCounterContainer">
+                    <span id="count" class="helperCounterText">
+
+                    </span>
+                    <span class="helperCounterText">
+                        items
+                    </span>
+                </div>
+                <div class="helperButtonsContainer">
+                    <button class="helperButton helperButtonActive" id="selectAll">
+                        All
+                    </button>
+                    <button class="helperButton" id="selectComplete">
+                        Complete
+                    </button>
+                    <button class="helperButton" id="selectIncomplete">
+                        Active
+                    </button>
+                </div>
+                <button class="helperClearButton" id="clearCompleted">
+                    Clear completed
+                </button>
+            </div>
         </div>
     </section>
 </main>

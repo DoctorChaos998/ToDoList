@@ -1,0 +1,68 @@
+.toDoHelperContainer{
+  padding: 10px;
+  display: none;
+  width: 100%;
+  background-color: #1b1f2b;
+}
+
+.toDoHelperContainerActive{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.helperButtonsContainer{
+  display: flex;
+  gap: 20px;
+}
+
+.helperButton{
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  color: white;
+  background-color: transparent;
+  font-size: 25px;
+  transition: border-color 0.2s ease-in-out;
+  cursor: pointer;
+  &:hover{
+    border-color: rgba(dodgerblue, 0.5);
+  }
+}
+
+.helperButtonActive{
+  border: 2px solid dodgerblue;
+  &:hover{
+    border-color: dodgerblue;
+  }
+}
+
+.helperCounterContainer{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.helperCounterText{
+  font-size: 25px;
+  color: white;
+}
+
+.helperClearButton{
+  visibility: hidden;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 25px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  &:hover{
+    background-color: dodgerblue;
+  }
+}
+
+.helperClearButtonActive{
+  visibility: visible;
+}

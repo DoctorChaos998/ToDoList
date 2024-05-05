@@ -6,7 +6,9 @@
 .toDoContainer{
   display: flex;
   padding: 10px 0;
-  //background-color: #1b1f2b;
+  background-color: #1b1f2b;
+  align-items: center;
+  border-bottom: 1px solid dodgerblue;
 }
 
 .toDoCompleteButton{
@@ -15,11 +17,24 @@
   justify-content: center;
   height: 40px;
   width: 40px;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: dodgerblue;
 }
 
 .toDo{
   flex: 1;
   padding: 0 10px;
+  color: white;
+  font-size: 20px;
+  word-break: break-all;
+}
+
+.completeToDo{
+  text-decoration: line-through;
+  color: rgba(white, 0.3);
 }
 
 .toDoDeleteButton{
@@ -28,4 +43,9 @@
   justify-content: center;
   height: 40px;
   width: 40px;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: red;
 }
