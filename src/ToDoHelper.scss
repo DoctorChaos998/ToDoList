@@ -25,16 +25,10 @@
   font-size: 25px;
   transition: border-color 0.2s ease-in-out;
   cursor: pointer;
-  &:hover{
-    border-color: rgba(dodgerblue, 0.5);
-  }
 }
 
 .helperButtonActive{
   border: 2px solid dodgerblue;
-  &:hover{
-    border-color: dodgerblue;
-  }
 }
 
 .helperCounterContainer{
@@ -58,11 +52,52 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  &:hover{
-    background-color: dodgerblue;
-  }
+  transition: background-color 0.2s ease-in-out;
 }
 
 .helperClearButtonActive{
   visibility: visible;
+}
+
+@media (hover: hover) {
+  .helperButton:hover{
+    border-color: rgba(dodgerblue, 0.5);
+  }
+  .helperButtonActive{
+    border-color: dodgerblue;
+  }
+  .helperClearButton:hover{
+    background-color: dodgerblue;
+  }
+}
+
+@media (hover: none) {
+  .helperButton:active{
+    border-color: rgba(dodgerblue, 0.5);
+  }
+  .helperButtonActive:active{
+    border-color: dodgerblue;
+  }
+  .helperClearButton:active{
+    background-color: dodgerblue;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .toDoListWrapper{
+    padding: 0 5px;
+  }
+  .helperCounterText{
+    font-size: 20px;
+  }
+  .toDoHelperContainerActive{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .helperButton{
+    font-size: 20px;
+  }
+  .helperClearButton{
+    font-size: 20px;
+  }
 }

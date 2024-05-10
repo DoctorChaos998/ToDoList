@@ -1,24 +1,25 @@
 .toDoFormContainer{
   display: flex;
-  height: 60px;
+  height: 65px;
   border-bottom: 1px solid dodgerblue;
   width: 100%;
 }
 
 .toggleAllToDoButton{
   height: 100%;
-  width: 100px;
+  width: 10%;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
   outline: none;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .addToDoButton{
   height: 100%;
-  width: 100px;
+  width: 10%;
   cursor: pointer;
   background-color: dodgerblue;
   border: none;
@@ -26,6 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .addToDoContainer{
@@ -46,5 +48,35 @@
   padding: 0 15px;
   &::placeholder{
     color: rgba(black, 0.3);
+  }
+}
+
+@media (hover: hover) {
+  .toggleAllToDoButton:hover{
+    background-color: #c5c0c0;
+  }
+  .addToDoButton:hover{
+    background-color: #166cc5;
+  }
+}
+
+@media (hover: none) {
+  .toggleAllToDoButton:active{
+    background-color: #c5c0c0;
+  }
+  .addToDoButton:active{
+    background-color: #166cc5;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .addToDoInput{
+    font-size: 20px;
+  }
+  .addToDoButton{
+    width: 15%;
+  }
+  .toggleAllToDoButton{
+    width: 15%;
   }
 }

@@ -25,6 +25,7 @@
 }
 
 .toDo{
+  position: relative;
   flex: 1;
   padding: 0 10px;
   color: white;
@@ -35,6 +36,15 @@
 .completeToDo{
   text-decoration: line-through;
   color: rgba(white, 0.3);
+}
+
+.renameToDoInput{
+  flex: 1;
+  font-size: 20px;
+  background-color: #1b1f2b;
+  padding: 0 10px;
+  color: white;
+  word-break: break-all;
 }
 
 .toDoDeleteButton{
@@ -48,4 +58,8 @@
   outline: none;
   border: none;
   color: red;
+}
+
+.noneToDo{
+  display: none;
 }
